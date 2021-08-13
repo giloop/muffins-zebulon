@@ -1,6 +1,7 @@
 body{
     /*overflow:hidden;*/
     background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
