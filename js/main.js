@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     // Ajout des morceaux depuis le fichier liste-morceaux.txt
     arTracks = [];
-    fetch("../liste-morceaux.json")
+    fetch("./liste-morceaux.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);
