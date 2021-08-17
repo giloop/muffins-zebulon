@@ -1,158 +1,245 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Muffin's Zébulon - l'Album</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/jquery.ui.css">
-	<link rel="stylesheet" type="text/css" href="css/jplayer.blue.monday.css">
-	<!--link rel="stylesheet" href="css/jplayer.pink.flag.css" -->
-	<script src="js/modernizr.2.5.3.min.js"></script>
-	<script src="js/jquery.min.1.7.js"></script>
-	<script src="js/jquery-ui-1.8.20.custom.min.js"></script>
-	<!-- script src="js/jquery.mousewheel.min.js"></script -->
-	<script src="js/turn.min.js"></script>
-	<script src="js/scissor.min.js"></script>
-	<script src="js/hash.js"></script>
-	<script src="js/jquery.jplayer.js"></script>
-	<script src="js/jplayer.playlist.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#343a40">
+  <meta name="author" content="Gilles Gonon, Denis Braud">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Muffin's Zebulon - l'Album</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="screen.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-	<div class="grid-container">
-		<div class="header">
-			<h1>Muffin's Zébulon - l'Album <br><small>Nico, Alain, Régis, ...</small></h1>
-			<p id="playing"></p>
-		</div>
-
-		<div class="book-container">
-			<div id="flipbook">
-				<div>
-					<h1>Muffin's Zébulon</h1>
-					<ul>
-						<li>1 time's goin by baby's comin.mp3</li>
-						<li>2 girl and boy.mp3</li>
-						<li>3 vinaigre.mp3</li>
-						<li>4 i'll be here.mp3</li>
-						<li>5 one more year.mp3</li>
-						<li>6 it's time for you.mp3</li>
-						<li>9 badjock.mp3</li>
-						<li>10 mystery girl.mp3</li>
-						<li>11 very good mum.mp3</li>
-					</ul>
-				</div>
-				<!-- <div class="hard"></div> -->
-				<div>
-					<h2>Time's goin by baby's comin</h2>
-					<p>C'est l'histoire d'une fille petite et jolie.</p>
-					<button type="button" onclick="playTrack(0)">Écoute-moi ça !</button> 
-
-				</div>
-				<div>
-					<h2>Girl and boy</h2>
-					<p>Un gars une fille, avec des habitudes</p>
-					<button type="button" onclick="playTrack(1)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>Vinaigre</h2>
-					<p>Ça sent pas bon</p>
-					<button type="button" onclick="playTrack(2)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>i'll be here</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(3)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>one more year</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(4)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>it's time for you</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(5)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>badjock</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(6)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>mystery girl</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(7)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>very good mum</h2>
-					<p>Description</p>
-					<button type="button" onclick="playTrack(8)">Écoute-moi ça !</button> 
-				</div>
-				<div>
-					<h2>Voilà c'est fini</h2>
-					<p>Merci</p>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="player-container">
-			<div id="jplayer" class="jp-jplayer"></div>
-			<div id="jp_container" class="jp-audio" role="application" aria-label="media player">
-				<div class="jp-type-playlist">
-					<div class="jp-gui jp-interface">
-						<div class="jp-controls">
-							<button class="jp-previous" role="button" tabindex="0">previous</button>
-							<button class="jp-play" role="button" tabindex="0">play</button>
-							<button class="jp-next" role="button" tabindex="0">next</button>
-							<button class="jp-stop" role="button" tabindex="0">stop</button>
-						</div>
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
-							</div>
-						</div>
-						<div class="jp-volume-controls">
-							<button class="jp-mute" role="button" tabindex="0">mute</button>
-							<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-							<div class="jp-volume-bar">
-								<div class="jp-volume-bar-value"></div>
-							</div>
-						</div>
-						<div class="jp-time-holder">
-							<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-							<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-						</div>
-						<div class="jp-toggles">
-							<button class="jp-repeat" role="button" tabindex="0">repeat</button>
-							<button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
-						</div>
-					</div>
-					<div class="jp-playlist">
-						<ul>
-							<li>&nbsp;</li>
-						</ul>
-					</div>
-					<div class="jp-no-solution">
-						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your
-						<a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="footer">
-			<h2>À bientôt</h2>
-		</div>
-	</div>
-
-	<script src="js/main.js">	</script>
-
-
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Muffin's Zebulon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-bs-target="#carouselDark" data-bs-slide-to="0">L'album</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="1"><span
+                class="badge bg-dark text-light border border-light me-2">1</span> Time's goin by baby's comin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="2"><span
+                class="badge bg-dark text-light border border-light me-2">2</span> Girl and boy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="3"><span
+                class="badge bg-dark text-light border border-light me-2">3</span> Vinaigre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="4"><span
+                class="badge bg-dark text-light border border-light me-2">4</span> I'll be here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="5"><span
+                class="badge bg-dark text-light border border-light me-2">5</span> One more year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="6"><span
+                class="badge bg-dark text-light border border-light me-2">6</span> It's time for you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="7"><span
+                class="badge bg-dark text-light border border-light me-2">7</span> Badjock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="8"><span
+                class="badge bg-dark text-light border border-light me-2">8</span> Mystery girl</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="9"><span
+                class="badge bg-dark text-light border border-light me-2">9</span> Very good mum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="bg-dark text-white p-0 m-0">
+      <div class="pb-3 row p-0 m-0">
+        <div class="col-2"><a onclick="tracksAudioPrev()" role="button" class="text-white py-2 ps-3 pe-1"><i
+              class="fas fa-backward"></i></a></div>
+        <div class="col text-center" id="audio-title">Time's goin by baby's comin</div>
+        <div class="col-2 text-end pe-4"><a onclick="tracksAudioNext()" role="button" class="text-white p-2"><i
+              class="fas fa-forward"></i></a></div>
+      </div>
+      <div class="text-center p-0 m-0 pb-2">
+        <audio id="audio" src="audio/1 time's goin by baby's comin.mp3" controls="" class="bg-light rounded-pill">
+          Your browser does not support the <code>audio</code> element. <a
+            href="1 time's goin by baby's comin.mp3">Downnload</a>
+        </audio>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img class="d-block w-100" src="cover.jpg" alt="Nick & Allan">
+            <div class="carousel-caption">
+              <h4 class="text-shadow">L'album</h4>
+              <ul class="navbar-nav mb-2 mb-lg-0 text-shadow" id="tracklist">
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="1" class="text-dark">Time's goin by baby's comin</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="2" class="text-dark">Girl and boy</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="3" class="text-dark">Vinaigre</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="4" class="text-dark"> I'll be here</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="5" class="text-dark"> One more year</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="6" class="text-dark"> It's time for you</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="7" class="text-dark"> Badjock</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="8" class="text-dark"> Mystery girl</a></li>
+                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="9" class="text-dark"> Very good mum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Time's goin by baby's comin</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(0)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Girl and boy</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(1)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Vinaigre</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br />
+              <a onclick="tracksAudioSet(2)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a><br />
+                  <div class="text-center"><img src="vinaigre.jpg" class="rounded" alt="Vinaigre..."></div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>I'll be here</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(3)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>One more year</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(4)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>It's time for you</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(5)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Badjock</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(6)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Mystery girl</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(7)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="carousel-caption">
+              <b>Very good mum</b><br />
+              <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br /><br />
+              <a onclick="tracksAudioSet(8)" role="button" class="text-dark"><i
+                  class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </main>
+  <footer class="mt-auto text-white-50 bg-dark"><p>By Denis & Gilou - <a href="index_turn.html">alternative version</a></p></footer>
+  <script src="main.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
