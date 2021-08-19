@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#343a40">
   <meta name="author" content="Gilles Gonon, Denis Braud">
   <meta name="robots" content="noindex,nofollow">
-  <title>Muffin's Zebulon - l'Album</title>
+  <title>Muffin's Zebulon - Times & Roll</title>
   <link rel="icon" href="favicon.png">
   <link rel="shortcut icon" href="favicon.png">
   <link href="screen.css" rel="stylesheet">
@@ -15,16 +15,19 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
-<body>
+<body class="album">
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Muffin's Zebulon</a>
+      <a class="navbar-brand" href="#">Muffin's Zebulon Times & Roll</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,11 +35,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#" data-bs-target="#carouselDark" data-bs-slide-to="0">L'album</a>
+            <a class="nav-link active" href="#" data-bs-target="#carouselDark" data-bs-slide-to="0">Times & Roll</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="1"><span
-                class="badge bg-dark text-light border border-light me-2">1</span> Time's goin by baby's comin</a>
+                class="badge bg-dark text-light border border-light me-2">1</span> Time's goin by</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-bs-target="#carouselDark" data-bs-slide-to="2"><span
@@ -91,7 +94,7 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div id="carouselDark" class="carousel slide carousel-dark" data-bs-interval="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1"></button>
@@ -106,35 +109,98 @@
           <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img class="d-block w-100" src="cover.jpg" alt="Nick & Allan">
+          <div class="carousel-item active">
+
             <div class="carousel-caption">
-              <h4 class="text-shadow">L'album</h4>
-              <ul class="navbar-nav mb-2 mb-lg-0 text-shadow" id="tracklist">
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="1" class="text-dark">Time's goin by baby's comin</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="2" class="text-dark">Girl and boy</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="3" class="text-dark">Vinaigre</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="4" class="text-dark"> I'll be here</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="5" class="text-dark"> One more year</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="6" class="text-dark"> It's time for you</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="7" class="text-dark"> Badjock</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="8" class="text-dark"> Mystery girl</a></li>
-                <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="9" class="text-dark"> Very good mum</a></li>
-              </ul>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <img class="d-block w-100" src="images/cover.png" alt="Nick & Allan">
+                </div>
+                <div class="col-lg-4">
+                  <h4>TIMES AND ROLL</h4>
+                  <ol>
+                    <li>/Time’s goin’ by</li>
+                    <li>/ Vinaigre</li>
+                    <li>/ Girl and boy</li>
+                    <li>/ I’ll be here</li>
+                    <li>/ It’s time for you</li>
+                    <li>/ One more year</li>
+                    <li>/ Virus</li>
+                    <li>/ Alien</li>
+                    <li>/ Bad joke</li>
+                    <li>/ Mystery girl</li>
+                    <li>/ A very good Mum</li>
+                  </ol>
+                  <!-- <ul class="navbar-nav mb-2 mb-lg-0 text-shadow" id="tracklist">
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="1" class="text-dark">Time's goin by baby's comin</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="2" class="text-dark">Girl and boy</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="3" class="text-dark">Vinaigre</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="4" class="text-dark"> I'll be here</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="5" class="text-dark"> One more year</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="6" class="text-dark"> It's time for you</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="7" class="text-dark"> Badjock</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="8" class="text-dark"> Mystery girl</a></li>
+                                  <li><a href="#" data-bs-target="#carouselDark" data-bs-slide-to="9" class="text-dark"> Very good mum</a></li>
+                                </ul> -->
+                </div>
+                <div class="col-lg-4">
+                  <br><b>Alain HERNANDEZ</b> : paroles et musique, chant, choeurs, guitares acoustiques,
+                  <br>clavier, programmation, percussions
+                  <br>
+                  <br>Nicolas HUERRE : guitares électriques lead et rythmiques, basse, guitares acoustiques,
+                  <br>production, mixage, mastering
+                  <br>
+                  <br>Régis BOLIVARD : batterie
+                  <br>
+                  <br>Margot HUERRE : Violon sur ‘I’ll be here’
+                  <br>
+                  <br>Enregistrement :
+                  <br>Studio Secrétan, Studio La Fosse
+                  <br>Finalisation, arrangements, mixage ; Studio La Fosse
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Time's goin by baby's comin</b><br />
               <br />
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <br>Little lovely gir little pretty girl Brand new day
+              <br>Little lovely girl oh little girl Years away
+              <br>One summer day When I try lok behind
+              <br>You came to stay Times go by
+              <br>You little girl into our world One more day
+              <br>Your pretty face On my way
+              <br>Your magic grace Wind had blown when I was young
+              <br>Your secret smile I’m gettin ‘ old
+              <br>Your magic eyes
+              <br>
+              <br>Oh little blue eyed girl But I had to carry on
+              <br>Oh go and change the world A little baby’s here to come
+              <br>Maybe boy or maybe girl
+              <br>So you’re grown He she will be part of my world
+              <br>And you are gone Hey
+              <br>You little girl
+              <br>To face the world So you could smile
+              <br>You find a chumb You could cry
+              <br>So you’ll be Mum No matter tears no matter fears
+              <br>Strong in this world I’ll be here
+              <br>My little girl Girl or boy
+              <br>Little lovely girl… You’ll give joy
+              <br>I am wiatin’ for your comin’
+              <br>Oh little blue eyed girl In the spring
+              <br>Oh go and change the world
+              <br>But I had…...
+              <br>Little lovely girl little pretty girl
+              <br>Little lovely girl
               <br /><br />
               <a onclick="tracksAudioSet(0)" role="button" class="text-dark"><i
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Girl and boy</b><br />
               <br />
@@ -145,20 +211,72 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Vinaigre</b><br />
               <br />
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br />
+              <div class="row">
+
+                <div class="col-xl-4">
+                  <br>Sometimes I had enoughyou treat me like a child
+                  <br>Well you had to know you’re not always right
+                  <br>You’ve got to respect all the people you are with
+                  <br>Oh we could make it better we could break the freeze
+                  <br>
+                  <br>Oh well it’s true that many times I’m doin’ mistakes
+                  <br>But it’s not e reason to get your eyes of snake
+                  <br>You’ve got to learn what runs in mind of man
+                  <br>The worst could get happen if we only just can blame
+                  <br>
+                  <br>We can get it out, we can make it clearer
+                  <br>One thing we can do is to learn to hear
+                </div>
+                <div class="col-xl-4">
+                  <br>What makes you angry is not the same for everyone
+                  <br>What makes you glad can make so sad another one
+                  <br>I know sometimes it’s hard to understand the other
+                  <br>But we had to try and situation will be better
+                  <br>
+                  <br>And now if we don’t move we ‘ll never get go farther
+                  <br>And I’m sure we’ll regert when we get much older
+                  <br>We’ve got to join our forces and try the best tha we can do
+                  <br>And everything will be allright oh yes for me and you
+                  <br>
+                  <br>We had just to listen and understand the other
+                  <br>Open up our eyes make the life much better…..
+                </div>
+                <div class="col-xl-4">
+                  <img src="vinaigre.jpg" class="rounded" alt="Vinaigre...">
+                </div>
+
+              </div>
               <br />
               <a onclick="tracksAudioSet(2)" role="button" class="text-dark"><i
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a><br />
-                  <div class="text-center"><img src="vinaigre.jpg" class="rounded" alt="Vinaigre..."></div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
+              <div class="row">
+
+              <div class="col-lg-4">
+                <img class="d-block w-50" src="images/cover.png" alt="Nick & Allan">
+                <h4>TIMES AND ROLL</h4>
+                <ol>
+                  <li>/Time’s goin’ by</li>
+                  <li>/ Vinaigre</li>
+                  <li>/ Girl and boy</li>
+                  <li>/ I’ll be here</li>
+                  <li>/ It’s time for you</li>
+                  <li>/ One more year</li>
+                  <li>/ Virus</li>
+                  <li>/ Alien</li>
+                  <li>/ Bad joke</li>
+                  <li>/ Mystery girl</li>
+                  <li>/ A very good Mum</li>
+                </ol>
+              </div>
+              <div class="col-lg-8">
               <b>I'll be here</b><br />
               <br />
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
@@ -168,7 +286,8 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          </div>
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>One more year</b><br />
               <br />
@@ -179,7 +298,7 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>It's time for you</b><br />
               <br />
@@ -190,7 +309,7 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Badjock</b><br />
               <br />
@@ -201,7 +320,7 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Mystery girl</b><br />
               <br />
@@ -212,7 +331,7 @@
                   class="fas fa-play"></i>&nbsp;&nbsp;Écouter</a>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item">
             <div class="carousel-caption">
               <b>Very good mum</b><br />
               <br />
@@ -234,7 +353,9 @@
         </button>
       </div>
   </main>
-  <footer class="mt-auto text-white-50 bg-dark"><p>By Denis & Gilou - <a href="index_turn.html">alternative version</a></p></footer>
+  <!-- <footer class="mt-auto text-white-50 bg-dark">
+    <p>By Denis & Gilou - <a href="index_turn.html">alternative version</a></p>
+  </footer> -->
   <script src="main.js"></script>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
