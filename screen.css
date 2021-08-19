@@ -21,11 +21,6 @@ a {
   margin-left: auto !important;
 }
 
-.text-shadow, .carousel-item ul.text-shadow li { 
-	font-weight: bold;
-	text-shadow: 0px 0px 2px #fff;
-}
-
 .filtre {
 	opacity: 0.2;
 }
@@ -34,4 +29,9 @@ a {
 	width: 75vh;
 	max-width: 100%;
 	margin:auto;
+}
+
+
+.scroll-y {
+	overflow-y: auto !important;
 }
