@@ -1,0 +1,12 @@
+######################
+# Eclipse
+######################
+.project
+.settings/
+.tern-project
+
+######################
+# Visual Studio Code
+######################
+.vscode/
+.factorypath
