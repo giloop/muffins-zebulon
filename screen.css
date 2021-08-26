@@ -33,6 +33,14 @@ a {
   text-decoration: none !important;
 }
 
+.small {
+  color:#666;
+}
+
+.nav-link {
+  padding: 0.1rem 0;
+}
+
 .navbar-brand {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -44,7 +52,7 @@ a {
 
 .img-cover {
   width: 75vh;
-  max-width: 100%;
+  max-width: 90%;
   margin:auto;
 }
 
