@@ -1,0 +1,21 @@
+{
+  "short_name": "Muffin's Zebulon",
+  "name": "Muffin's Zebulon",
+  "icons": [
+    {
+      "src": "/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000"
+}
