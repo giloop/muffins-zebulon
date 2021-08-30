@@ -1,6 +1,6 @@
 var trackCurrentIndex = 0;
 var tracks = [
-  {"artist":"Muffin's Zebulon", "title": "Time's goin by baby's comin", "file":"1 time's goin by baby's comin.mp3"},
+  {"artist":"Muffin's Zebulon", "title": "Time's goin by", "file":"1 time's goin by baby's comin.mp3"},
   {"artist":"Muffin's Zebulon", "title": "Girl and boy", "file":"2 girl and boy.mp3"},
   {"artist":"Muffin's Zebulon", "title": "Vinaigre", "file":"3 vinaigre.mp3"},
   {"artist":"Muffin's Zebulon", "title": "I'll be here", "file":"4 i'll be here.mp3"},
@@ -8,9 +8,9 @@ var tracks = [
   {"artist":"Muffin's Zebulon", "title": "It's time for you", "file":"6 it's time for you.mp3"},
   {"artist":"Muffin's Zebulon", "title": "Virus", "file":"7 virus.mp3"},
   {"artist":"Muffin's Zebulon", "title": "Alien", "file":"8 alien.mp3"},
-  {"artist":"Muffin's Zebulon", "title": "Bad Joke", "file":"9 badjock.mp3"},
+  {"artist":"Muffin's Zebulon", "title": "Bad joke", "file":"9 badjock.mp3"},
   {"artist":"Muffin's Zebulon", "title": "Mystery girl", "file":"10 mystery girl.mp3"},
-  {"artist":"Muffin's Zebulon", "title": "Very good mum", "file":"11 very good mum.mp3"}
+  {"artist":"Muffin's Zebulon", "title": "A very good mum", "file":"11 very good mum.mp3"}
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
