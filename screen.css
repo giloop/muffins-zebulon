@@ -1,4 +1,4 @@
-body.album {
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -48,6 +48,24 @@ a {
 .navbar-brand {
   margin-right: auto !important;
   margin-left: auto !important;
+  line-height: 0.8em;
+}
+
+.navbar-brand .small {
+  font-size: 0.7em;
+  color:#fff;
+}
+
+.navbar-collapse {
+  background-color: #ddd !important;
+}
+.navbar-collapse .nav-link {
+  color: #000 !important;
+}
+.track .badge {
+  color: #000 !important;
+  border-color: #000 !important;
+  width: 2.5em;
 }
 
 .filtre {
