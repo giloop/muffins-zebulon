@@ -15,6 +15,12 @@ a {
   padding: 0.1rem 0;
 }
 
+#share-button, #backtotop-button {
+  position: fixed; bottom: 0; padding: 6px 14px;
+  color: #777;}
+#share-button {left: 0;}
+#backtotop-button {right: 0;}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
