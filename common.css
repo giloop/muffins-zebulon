@@ -15,6 +15,15 @@ a {
   padding: 0.1rem 0;
 }
 
+.track a {
+  color: #000 !important;
+}
+.track .badge {
+  color: #000 !important;
+  border-color: #000 !important;
+  width: 2.5em;
+}
+
 #share-button, #backtotop-button {
   position: fixed; bottom: 0; padding: 6px 14px;
   color: #777;}

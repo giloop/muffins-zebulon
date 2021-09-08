@@ -42,15 +42,6 @@
 .navbar-collapse .nav-link {
   color: #000 !important;
 }
-.track a {
-  color: #000 !important;
-}
-.track .badge {
-  color: #000 !important;
-  border-color: #000 !important;
-  width: 2.5em;
-}
-
 .img-cover {
   width: 75vh;
   max-width: 90%;
