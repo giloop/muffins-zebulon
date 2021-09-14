@@ -1,5 +1,5 @@
 body {
-  margin-bottom: 40px; /* Margin bottom by footer height */
+  margin-bottom: 35px; /* Margin bottom by footer height */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,6 +15,21 @@ a {
   padding: 0.1rem 0;
 }
 
+.track a {
+  color: #000 !important;
+}
+.track .badge {
+  color: #000 !important;
+  border-color: #000 !important;
+  width: 2.5em;
+}
+
+#share-button, #backtotop-button {
+  position: fixed; bottom: 0; padding: 6px 14px;
+  color: #777;}
+#share-button {left: 0;}
+#backtotop-button {right: 0;}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -25,8 +40,10 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px; /* Set the fixed height of the footer here */
+  height: 35px; /* Set the fixed height of the footer here */
   line-height: 35px; /* Vertically center the text there */
   background-color: #f5f5f5;
+  font-size: 0.9rem;
 }
 .footer a {color:#555}
+.footer img {margin-top:-3px}

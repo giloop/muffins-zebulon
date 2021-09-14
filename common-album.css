@@ -3,12 +3,12 @@
 }
 
 .carousel-item {
-  height: 78vh;
   background-size: cover;
   background-position: center center;
 }
 
 .carousel-caption {
+  position: relative;
   top:0rem;
   left:0%;
   right:0%;
@@ -17,13 +17,13 @@
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
-  padding: 20px;
   align-items: start !important;
+  bottom: auto;
 }
 
-.carousel-control-prev { padding-left: 0; }
-.carousel-control-next { padding-right: 0; }
-.carousel-control-prev-icon, .carousel-control-next-icon {width:1rem; height: 1rem;}
+.carousel-control-prev { padding: 1rem 5% 5% 0.75rem; }
+.carousel-control-next { padding: 1rem 0.75rem 5% 5%; }
+.carousel-control-prev i,.carousel-control-next i { color: #000 !important; }
 
 .navbar-brand {
   margin-right: auto !important;
@@ -42,25 +42,14 @@
 .navbar-collapse .nav-link {
   color: #000 !important;
 }
-.track a {
-  color: #000 !important;
-}
-.track .badge {
-  color: #000 !important;
-  border-color: #000 !important;
-  width: 2.5em;
-}
-
-.filtre {
-  opacity: 0.2;
-}
-
 .img-cover {
   width: 75vh;
   max-width: 90%;
   margin:auto;
 }
 
-.scroll-y {
-  overflow-y: auto !important;
+.img-cover-bg {
+  position: absolute;
+  left: max(5%, calc((100vw - 75vh) / 2));
+  opacity: 0.2;
 }
